@@ -1,0 +1,7 @@
+- hosts: linuxservergrp01
+  tasks:
+  - name: Fetch files from remote server to the local machine
+    fetch:
+      src: /backup/hosts
+      dest: /backup
+      mode: 0774
