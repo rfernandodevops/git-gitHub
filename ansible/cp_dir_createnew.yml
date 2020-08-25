@@ -1,0 +1,6 @@
+- hosts: linuxservergrp01
+  tasks:
+  - name: Copy directory - create if not present
+    copy:
+      src: /GITREPO
+      dest: /backup
