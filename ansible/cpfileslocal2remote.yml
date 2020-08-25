@@ -1,0 +1,6 @@
+- hosts: linuxservergrp01
+  tasks:
+  - name: Ansible copy file to remote server
+    copy:
+      src: /tmp/testconfig.file
+      dest: /tmp
