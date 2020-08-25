@@ -1,0 +1,7 @@
+- hosts: linuxservergrp01
+  tasks:
+  - name: Copy files on remote server itself
+    copy:
+      src: /etc/hosts
+      dest: /backup/
+      remote_src: yes
